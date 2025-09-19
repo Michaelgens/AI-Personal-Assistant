@@ -71,7 +71,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           {/* Features */}
-          <div>
+          <div className='md:block hidden'>
             <h4 className="text-lg font-semibold mb-4">Features</h4>
             <ul className="space-y-2 text-gray-300">
               <li>Google Calendar Integration</li>
