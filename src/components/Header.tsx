@@ -1,30 +1,29 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Calendar, Menu, X } from 'lucide-react';
 
-interface HeaderProps {
-  currentPage: string;
-  onNavigate: (page: string) => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const location = useLocation();
 
   const navigation = [
-    { name: 'Home', href: 'home' },
-    { name: 'Privacy', href: 'privacy' },
-    { name: 'Legal', href: 'legal' },
-    { name: 'Terms', href: 'terms' },
+    { name: 'Home', href: '/' },
+    { name: 'Privacy', href: '/privacy' },
+    { name: 'Legal', href: '/legal' },
+    { name: 'Terms', href: '/terms' },
   ];
+
+  // Helper function to determine if a link is active
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div 
-            className="flex items-center cursor-pointer"
-            onClick={() => onNavigate('home')}
-          >
+          <Link to="/" className="flex items-center">
             <div className="bg-gradient-to-br from-indigo-600 to-purple-700 p-2 rounded-xl">
               <Calendar className="h-6 w-6 text-white" />
             </div>
@@ -33,22 +32,22 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                 AI Personal Assistant
               </h1>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <button
+              <Link
                 key={item.name}
-                onClick={() => onNavigate(item.href)}
+                to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  currentPage === item.href
+                  isActive(item.href)
                     ? 'text-indigo-600 bg-indigo-50'
                     : 'text-gray-600 hover:text-indigo-600 hover:bg-gray-50'
                 }`}
               >
                 {item.name}
-              </button>
+              </Link>
             ))}
           </nav>
 
@@ -68,20 +67,18 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
           <div className="md:hidden border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-2">
               {navigation.map((item) => (
-                <button
+                <Link
                   key={item.name}
-                  onClick={() => {
-                    onNavigate(item.href);
-                    setIsMenuOpen(false);
-                  }}
+                  to={item.href}
+                  onClick={() => setIsMenuOpen(false)}
                   className={`px-3 py-2 rounded-md text-sm font-medium text-left transition-colors duration-200 ${
-                    currentPage === item.href
+                    isActive(item.href)
                       ? 'text-indigo-600 bg-indigo-50'
                       : 'text-gray-600 hover:text-indigo-600 hover:bg-gray-50'
                   }`}
                 >
                   {item.name}
-                </button>
+                </Link>
               ))}
             </nav>
           </div>

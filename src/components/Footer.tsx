@@ -1,11 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, Mail, Shield, FileText, Scale } from 'lucide-react';
 
-interface FooterProps {
-  onNavigate: (page: string) => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -33,39 +30,39 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => onNavigate('home')}
+                <Link
+                  to="/"
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onNavigate('privacy')}
+                <Link
+                  to="/privacy"
                   className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"
                 >
                   <Shield className="h-4 w-4 mr-1" />
                   Privacy Policy
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onNavigate('terms')}
+                <Link
+                  to="/terms"
                   className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"
                 >
                   <FileText className="h-4 w-4 mr-1" />
                   Terms & Conditions
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onNavigate('legal')}
+                <Link
+                  to="/legal"
                   className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"
                 >
                   <Scale className="h-4 w-4 mr-1" />
                   Legal & Disclaimer
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
