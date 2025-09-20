@@ -13,6 +13,7 @@ import {
   ArrowRight,
   Download
 } from 'lucide-react';
+import InternalCalendarSection from '../components/InternalCalendar';
 
 const HomePage: React.FC = () => {
   const features = [
@@ -219,6 +220,8 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <InternalCalendarSection />
 
       {/* AI Features Highlight */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
