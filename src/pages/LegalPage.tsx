@@ -172,7 +172,7 @@ const LegalPage: React.FC = () => {
                   AI Personal Assistant integrates with third-party services including:
                 </p>
                 <ul className="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2 mb-4">
-                  <li><strong>Google Calendar API:</strong> For calendar data synchronization</li>
+                  <li><strong>External Calendar APIs:</strong> For optional calendar synchronization (Google Calendar, etc.)</li>
                   <li><strong>DeepSeek AI:</strong> For artificial intelligence capabilities</li>
                   <li><strong>Cloud Storage Services:</strong> For data backup and synchronization</li>
                   <li><strong>Push Notification Services:</strong> For alerts and reminders</li>
@@ -224,7 +224,7 @@ const LegalPage: React.FC = () => {
                 <p><strong>Address:</strong> AI Personal Assistant Legal Department</p>
                 <p className="ml-16">123 Legal Avenue, Suite 100</p>
                 <p className="ml-16">Tech City, TC 12345</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567 ext. 101</p>
+                <p><strong>Phone:</strong> +1 (***) ***-****</p>
               </div>
             </div>
           </section>

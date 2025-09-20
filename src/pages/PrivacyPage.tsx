@@ -42,16 +42,17 @@ const PrivacyPage: React.FC = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Calendar Data</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Calendar & Event Data</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-4">
-                  When you connect your Google Calendar, we collect and store:
+                  We collect and store calendar data from multiple sources:
                 </p>
                 <ul className="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
-                  <li>Event titles, descriptions, and locations</li>
-                  <li>Event dates, times, and duration</li>
-                  <li>Attendee information for events you create or manage</li>
-                  <li>Calendar settings and preferences</li>
-                  <li>Recurring event patterns</li>
+                  <li>Events created in our built-in calendar system</li>
+                  <li>Tasks, reminders, and notes you create within the app</li>
+                  <li>Google Calendar data (when you choose to connect)</li>
+                  <li>Event titles, descriptions, locations, and timing information</li>
+                  <li>Calendar preferences and notification settings</li>
+                  <li>Recurring event patterns and scheduling preferences</li>
                 </ul>
               </div>
 
@@ -85,7 +86,8 @@ const PrivacyPage: React.FC = () => {
               <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-4 sm:p-6 rounded-xl">
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3">Core Functionality</h3>
                 <ul className="text-sm sm:text-base text-gray-600 space-y-2">
-                  <li>• Display and manage your calendar events</li>
+                  <li>• Display and manage events in our built-in calendar</li>
+                  <li>• Sync with Google Calendar (optional integration)</li>
                   <li>• Provide AI-powered scheduling assistance</li>
                   <li>• Send notifications and reminders</li>
                   <li>• Sync data across your devices</li>
@@ -173,6 +175,7 @@ const PrivacyPage: React.FC = () => {
                 <ul className="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                   <li>Cloud hosting services (with strict data processing agreements)</li>
                   <li>AI processing services (DeepSeek) for assistant functionality</li>
+                  <li>Calendar synchronization services (only when you choose external integration)</li>
                   <li>Analytics services for app performance monitoring</li>
                   <li>Customer support and communication tools</li>
                 </ul>
@@ -217,7 +220,7 @@ const PrivacyPage: React.FC = () => {
               <div className="space-y-2 text-sm sm:text-base text-gray-600">
                 <p><strong>Email:</strong> privacy@aipersonalassistant.com</p>
                 <p><strong>Address:</strong> AI Personal Assistant, 123 Privacy Street, Tech City, TC 12345</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Phone:</strong> +1 (***) ***-****</p>
               </div>
             </div>
           </section>

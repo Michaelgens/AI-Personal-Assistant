@@ -88,8 +88,8 @@ const HomePage: React.FC = () => {
               Personal Assistant
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
-              Seamlessly integrate Google Calendar with intelligent AI assistance. Manage events, tasks, and reminders 
-              while getting personalized productivity insights powered by DeepSeek AI.
+              Complete productivity solution with built-in calendar, tasks, and AI assistance. Create and manage your schedule 
+              independently, or optionally sync with Google Calendar for enhanced integration. <br />Get personalized insights powered by DeepSeek AI.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center px-4">
               <a href="/app.apk" download className="w-auto bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group">
@@ -163,7 +163,7 @@ const HomePage: React.FC = () => {
               Everything you need for <span className="text-indigo-600">productivity</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Combine the power of Google Calendar with AI-driven insights to optimize your daily schedule and boost productivity.
+              A complete productivity suite with built-in calendar, intelligent AI assistance, and optional external integrations to optimize your daily schedule.
             </p>
             <div className="mt-6 sm:mt-8 w-16 sm:w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
           </div>
@@ -198,8 +198,8 @@ const HomePage: React.FC = () => {
               <div className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-3 sm:p-4 rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center mx-auto mb-4 sm:mb-6">
                 <span className="text-lg sm:text-2xl font-bold">1</span>
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 px-4">Connect Your Calendar</h3>
-              <p className="text-sm sm:text-base text-gray-600 px-4">Securely link your Google Calendar to import all your existing events and schedules.</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 px-4">Set Up Your Workspace</h3>
+              <p className="text-sm sm:text-base text-gray-600 px-4">Start with our built-in calendar system or optionally connect your Google Calendar for enhanced integration.</p>
             </div>
             
             <div className="text-center">
@@ -207,7 +207,7 @@ const HomePage: React.FC = () => {
                 <span className="text-lg sm:text-2xl font-bold">2</span>
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 px-4">Start Organizing</h3>
-              <p className="text-sm sm:text-base text-gray-600 px-4">Create tasks, set reminders, and organize your schedule with our intuitive interface.</p>
+              <p className="text-sm sm:text-base text-gray-600 px-4">Create events, tasks, and reminders using our powerful built-in tools with an intuitive, user-friendly interface.</p>
             </div>
             
             <div className="text-center">
@@ -215,7 +215,7 @@ const HomePage: React.FC = () => {
                 <span className="text-lg sm:text-2xl font-bold">3</span>
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 px-4">Chat with AI</h3>
-              <p className="text-sm sm:text-base text-gray-600 px-4">Ask your AI assistant questions about your schedule and get personalized productivity insights.</p>
+              <p className="text-sm sm:text-base text-gray-600 px-4">Interact with your AI assistant to analyze your schedule, get insights, and receive personalized productivity recommendations.</p>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-sm sm:text-base font-semibold text-gray-900">Smart Schedule Analysis</h4>
-                    <p className="text-sm sm:text-base text-gray-600">AI analyzes your calendar patterns to suggest optimal meeting times and identify scheduling conflicts.</p>
+                    <p className="text-sm sm:text-base text-gray-600">AI analyzes patterns from your built-in calendar and any connected external calendars to suggest optimal scheduling.</p>
                   </div>
                 </div>
                 
@@ -256,7 +256,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-sm sm:text-base font-semibold text-gray-900">Natural Language Queries</h4>
-                    <p className="text-sm sm:text-base text-gray-600">Ask questions like "What's my schedule tomorrow?" or "When am I free for a 2-hour meeting this week?"</p>
+                    <p className="text-sm sm:text-base text-gray-600">Ask questions about your schedule, tasks, and availability using natural language - works with all your calendar data.</p>
                   </div>
                 </div>
                 
@@ -266,7 +266,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-sm sm:text-base font-semibold text-gray-900">Productivity Insights</h4>
-                    <p className="text-sm sm:text-base text-gray-600">Get personalized recommendations to improve your time management and work-life balance.</p>
+                    <p className="text-sm sm:text-base text-gray-600">Receive personalized recommendations based on your complete schedule data to improve time management and productivity.</p>
                   </div>
                 </div>
               </div>
@@ -300,16 +300,16 @@ const HomePage: React.FC = () => {
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <div className="bg-gray-50 p-3 sm:p-4 rounded-2xl border border-gray-200">
-                  <p className="text-sm sm:text-base text-gray-800">"What's my schedule like tomorrow?"</p>
+                  <p className="text-sm sm:text-base text-gray-800">"What do I have scheduled for tomorrow?"</p>
                 </div>
                 <div className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-3 sm:p-4 rounded-2xl shadow-lg">
-                  <p className="text-sm sm:text-base">Tomorrow you have 3 meetings: Team standup at 9 AM, Client call at 2 PM, and Project review at 4 PM. You have a 2-hour free block from 11 AM to 1 PM - perfect for deep work! 🚀</p>
+                  <p className="text-sm sm:text-base">Tomorrow you have 3 events: Team standup at 9 AM, Client call at 2 PM, and Project review at 4 PM. You have a 2-hour free block from 11 AM to 1 PM - perfect for focused work! 🚀</p>
                 </div>
                 <div className="bg-gray-50 p-3 sm:p-4 rounded-2xl border border-gray-200">
-                  <p className="text-sm sm:text-base text-gray-800">"Can you reschedule my 2 PM call?"</p>
+                  <p className="text-sm sm:text-base text-gray-800">"Help me find time for a 1-hour meeting this week"</p>
                 </div>
                 <div className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-3 sm:p-4 rounded-2xl shadow-lg">
-                  <p className="text-sm sm:text-base">I found an opening at 3:30 PM tomorrow that works for both you and your client. Would you like me to send the reschedule request? ✨</p>
+                  <p className="text-sm sm:text-base">I found several options: Wednesday 2-3 PM, Thursday 10-11 AM, or Friday 3-4 PM. All are free blocks in your schedule. Which works best? ✨</p>
                 </div>
                 <div className="flex items-center text-gray-400 text-sm">
                   <div className="flex space-x-1 mr-2">
@@ -372,7 +372,7 @@ const HomePage: React.FC = () => {
             Ready to boost your productivity?
             </h2>
             <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto px-4">
-            Join thousands of users who have transformed their daily productivity with AI Personal Assistant.
+            Join thousands of users who have transformed their productivity with our complete, AI-powered solution.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center px-4">
               <a href='#action' className="w-full sm:w-auto bg-white text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group">

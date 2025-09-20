@@ -72,11 +72,11 @@ const Footer: React.FC = () => {
           <div className='md:block hidden'>
             <h4 className="text-lg font-semibold mb-4">Features</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Google Calendar Integration</li>
+              <li>Built-in Calendar System</li>
               <li>AI-Powered Scheduling</li>
               <li>Smart Task Management</li>
               <li>Productivity Analytics</li>
-              <li>Voice Assistant</li>
+              <li>Optional External Sync</li>
             </ul>
           </div>
         </div>

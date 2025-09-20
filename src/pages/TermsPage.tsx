@@ -235,9 +235,10 @@ const TermsPage: React.FC = () => {
               <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm">
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Your Content</h3>
                 <p className="text-sm sm:text-base text-gray-600">
-                  You retain ownership of your calendar data, tasks, and other content you create or upload. 
-                  By using our service, you grant us a limited license to process and store your content solely 
-                  for the purpose of providing our services to you.
+                  You retain full ownership of all data you create within our app, including events, tasks, reminders, 
+                  and other content. For external calendar integrations, you maintain ownership as per the respective 
+                  third-party terms. By using our service, you grant us a limited license to process and store your 
+                  content solely for providing our services to you.
                 </p>
               </div>
             </div>
@@ -354,7 +355,7 @@ const TermsPage: React.FC = () => {
                   <p>AI Personal Assistant</p>
                   <p>123 Innovation Drive, Suite 200</p>
                   <p>Tech City, TC 12345</p>
-                  <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                  <p><strong>Phone:</strong> +1 (***) ***-****</p>
                 </div>
               </div>
             </div>
