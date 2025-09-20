@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Mail, Shield, FileText, Scale } from 'lucide-react';
+import { Calendar, Mail, Shield, FileText, Scale, Home } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -32,8 +32,9 @@ const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"
                 >
+                  <Home className="h-4 w-4 mr-1" />
                   Home
                 </Link>
               </li>
