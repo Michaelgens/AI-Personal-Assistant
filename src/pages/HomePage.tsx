@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
               independently, or optionally sync with Google Calendar for enhanced integration. <br />Get personalized insights powered by DeepSeek AI.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center px-4">
-              <a href="/app.apk" download className="w-auto bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group">
+              <a href="https://v1vldmmhljmkx1du.public.blob.vercel-storage.com/app.apk" download className="w-auto bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group">
                 <Download className="h-5 w-5 mr-2 group-hover:animate-bounce" />
                 Download App
                 <ArrowRight className="h-4 w-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-200" />
